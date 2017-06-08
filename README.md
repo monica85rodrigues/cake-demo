@@ -14,7 +14,7 @@ With Cake you can do many things such as:
 
 There are many _Addins_ that you can use in Cake like: 
 Docker, Code Coverage, Git, MicroServices, Postman, Powershell, and many others.
-You can explore these addins here: http://cakebuild.net/addins/
+You can explore these addins [here](http://cakebuild.net/addins/).
 
 ## Why Cake?
 
@@ -26,8 +26,19 @@ There are many advantages to use cake such as:
 * Open source
 * You don't need to version binaries
 
-Some notes:
-* You can use some extensions for Visual Studio Code like: 
+I use this extension for Visual Studio Code: Cake build script language support. Unfortunately you don't have intellisence for Cake, if you find something in the future, please advice me :-)
+
+There is a great responsive community on [Gitter chat](https://gitter.im/cake-build/cake).
+
+## How can I start?
+
+You need to build.ps1 presents on my demo
+
+
+
+
+
+
 
 
 
