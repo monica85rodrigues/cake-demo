@@ -56,6 +56,14 @@ In cake file you can see the following tasks:
 
 > Read my build.cake and try to understand it! I know, it's a very very simple example :smiley: :smiley: 
 
+### Useful links
+
+* [Getting started here from cake website](http://cakebuild.net/docs/tutorials/getting-started)
+* [Addins](http://cakebuild.net/addins/)
+* [Documentation](http://cakebuild.net/docs/)
+* [Gitter chat](https://gitter.im/cake-build/cake)
+
+
 
 
 
