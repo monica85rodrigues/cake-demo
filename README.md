@@ -34,7 +34,7 @@ There is a great responsive community on [Gitter chat](https://gitter.im/cake-bu
 
 You just need the _build.ps1_ file present in my [demo project](https://github.com/monica85rodrigues/cake-demo/tree/master/CompleteCakeDemo) and create a new file _**name-of-file**.cake_ in same directory. Usually the name of this file is build.cake but you can use another name.
 
-Yes, you only need this for start :D
+Yes, you only need this for start :blush:
 
 Now, you are ready to start writting in your cake file all the tasks you want.
 
@@ -54,7 +54,7 @@ In cake file you can see the following tasks:
 
 **Note:** You have tools to run unit tests for XUnit or others. Explore it!
 
-> Read my build.cake and try to understand it! I know, it's a very very simple example :D :D  
+> Read my build.cake and try to understand it! I know, it's a very very simple example :smiley: :smiley: 
 
 
 
