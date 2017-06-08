@@ -38,6 +38,8 @@ Yes, you only need this for start :D
 
 Now, you are ready to start writting in your cake file all the tasks you want.
 
+After to write all taks you just need to run build.ps1 with Powershell window or you can use Visual studio code terminal.
+
 ## Demo structure
 
 In my demo structure you can see two projects:
@@ -52,7 +54,7 @@ In cake file you can see the following tasks:
 
 **Note:** You have tools to run unit tests for XUnit or others. Explore it!
 
-
+> Read my build.cake and try to understand it! I know, it's a very very simple example :D :D  
 
 
 
