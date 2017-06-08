@@ -32,7 +32,27 @@ There is a great responsive community on [Gitter chat](https://gitter.im/cake-bu
 
 ## How can I start?
 
-You need to build.ps1 presents on my demo
+You just need the _build.ps1_ file present in my [demo project](https://github.com/monica85rodrigues/cake-demo/tree/master/CompleteCakeDemo) and create a new file _**name-of-file**.cake_ in same directory. Usually the name of this file is build.cake but you can use another name.
+
+Yes, you only need this for start :D
+
+Now, you are ready to start writting in your cake file all the tasks you want.
+
+## Demo structure
+
+In my demo structure you can see two projects:
+* Web Api
+* Web Api Tests
+
+In cake file you can see the following tasks:
+* Clean your solution
+* Restore all nuget packages
+* Build your solution
+* Run unit tests
+
+**Note:** You have tools to run unit tests for XUnit or others. Explore it!
+
+
 
 
 
