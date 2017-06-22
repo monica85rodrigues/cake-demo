@@ -1,26 +1,35 @@
 ﻿namespace Presentation.Web.SpecflowTests.Steps
 {
     using TechTalk.SpecFlow;
+    using RestSharp;
+    using NUnit.Framework;
+    using Presentation.Web.SpecflowTests.Helpers;
 
     [Binding]
     public sealed class ValuesControllerSteps
     {
-        [Given(@"there are two values in the system")]
-        public void GivenThereAreTwoValuesInTheSystem()
-        {
-            //to be implemented
-        }
+        public const string BaseUri = "http://localhost:64355";
+        public const string ResourceApi = "api/values";
+        public const string KeyToSaveDataResponse = "ValuesDataResponse";
 
         [When(@"I retrieve list of all values")]
         public void WhenIRetrieveListOfAllValues()
         {
-            //to be implemented
+            var dataResponse = new RestClient(BaseUri).Execute<string[]>(new RestRequestSettings
+            {
+                Method = Method.GET,
+                Resource = ResourceApi
+            });
+            ScenarioContext.Current.Add(KeyToSaveDataResponse, dataResponse);
         }
 
         [Then(@"I get a list with two values")]
         public void ThenIGetAListWithTwoValues()
         {
-            //to be implemented
+            var numberOfValues = 2;
+            var dataResponse = ScenarioContext.Current.Get<string[]>(KeyToSaveDataResponse);
+
+            Assert.AreEqual(numberOfValues, dataResponse.Length);
         }
     }
 }

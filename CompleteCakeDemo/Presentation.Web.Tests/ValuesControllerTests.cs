@@ -1,8 +1,8 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Presentation.Web.Controllers;
-
 namespace Presentation.Web.Tests
 {
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Presentation.Web.Controllers;
+
     [TestClass]
     public class ValuesControllerTests
     {

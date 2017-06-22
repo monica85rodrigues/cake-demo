@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-
-namespace Presentation.Web.Controllers
+﻿namespace Presentation.Web.Controllers
 {
-    [Route("api/[controller]")]
+    using System.Collections.Generic;
+    using Microsoft.AspNetCore.Mvc;
+
+    [Route("api/values")]
     public class ValuesController : Controller
     {
         // GET api/values
