@@ -51,6 +51,7 @@ In cake file you can see the following tasks:
 * Restore all nuget packages
 * Build your solution
 * Run unit tests
+* Run Specflow Tests
 
 **Note:** You have tools to run unit tests for XUnit or others. Explore it!
 
