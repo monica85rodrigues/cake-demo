@@ -1,10 +1,12 @@
 #tool "nuget:?package=NUnit.ConsoleRunner"
+#tool "nuget:?package=SpecFlow&version=2.0"
 
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
 var buildDir = Directory("./Presentation.Web/bin") + Directory(configuration);
 var solution = "./CompleteCakeDemo.sln";
+
 
 Task("Clean")
 	.Does(() => {
@@ -29,8 +31,13 @@ Task("Run-Unit-Tests")
 		DotNetCoreTest("./Presentation.Web.Tests/Presentation.Web.Tests.csproj");
 	});
 
+Task("SpecflowTests")
+	.IsDependentOn("Run-Unit-Tests")
+	.Does(() => {
+		SpecFlowStepDefinitionReport(new FilePath("./Presentation.Web.SpecflowTests/Presentation.Web.SpecflowTests.csproj"));
+	});
 
 Task("Default")
-	.IsDependentOn("Run-Unit-Tests");
+	.IsDependentOn("SpecflowTests");
 
 RunTarget(target);
