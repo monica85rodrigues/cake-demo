@@ -1,7 +1,7 @@
 ﻿namespace Presentation.Web.Controllers
 {
-    using System.Collections.Generic;
     using Microsoft.AspNetCore.Mvc;
+    using System.Collections.Generic;
 
     [Route("api/values")]
     public class ValuesController : Controller

@@ -1,8 +1,8 @@
 ﻿namespace Presentation.Web
 {
-    using System.IO;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
+    using System.IO;
 
     public class Program
     {

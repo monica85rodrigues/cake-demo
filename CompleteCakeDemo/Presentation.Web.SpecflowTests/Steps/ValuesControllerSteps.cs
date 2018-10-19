@@ -1,9 +1,9 @@
 ﻿namespace Presentation.Web.SpecflowTests.Steps
 {
-    using TechTalk.SpecFlow;
-    using RestSharp;
     using NUnit.Framework;
     using Presentation.Web.SpecflowTests.Helpers;
+    using RestSharp;
+    using TechTalk.SpecFlow;
 
     [Binding]
     public sealed class ValuesControllerSteps
