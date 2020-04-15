@@ -1,5 +1,11 @@
 # Cake
 
+- [What is Cake?](#what-is-cake)
+- [Why Cake?](#why-cake)
+- [How can I start?](#how-can-i-start)
+- [Demo structure](#demo-structure)
+  - [Useful links](#useful-links)
+
 ## What is Cake?
 
 Cake (http://cakebuild.net) is a cross platform build automation system with a C# DSL.
