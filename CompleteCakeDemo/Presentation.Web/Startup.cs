@@ -28,7 +28,10 @@
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+
+#if DEBUG
             loggerFactory.AddDebug();
+#endif
 
             app.UseMvc();
         }
